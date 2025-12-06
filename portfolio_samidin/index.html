@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio — Samidin, S.Kom</title>
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="description" content="Portofolio Samidin | Lulusan Teknik Informatika — Junior Programmer & Inovator" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icons/icon-192.svg" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-flex">
+
+    <div>
+      <h1>Samidin, S.Kom</h1>
+      <p class="subtitle">Lulusan Teknik Informatika — Junior Programmer & Inovator</p>
+
+      <nav class="nav">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#resume">CV</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+
+    <img src="foto2.jpg" alt="Foto Samidin" class="profile-img">
+  </div>
+</header>
+
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah lulusan baru yang berdedikasi, bersemangat, dan memiliki keinginan kuat untuk berkembang dalam dunia profesional. Mahir pada pengembangan perangkat lunak, analisis data, dan sistem informasi.</p>
+      <ul class="info-list">
+        <li><strong>Pendidikan:</strong> S1 Teknik Informatika — Universitas Ma'arif Nahdlatul Ulama Kebumen (2024)</li>
+        <li><strong>Keahlian:</strong> Pengembangan Web, Python, PHP, MySQL, Dasar AI & Data</li>
+        <li><strong>Bahasa:</strong> Indonesia, Inggris (dasar)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Proyek Pilihan</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>Portofolio PWA</h3>
+          <p>Website PWA responsif (this project) — HTML, CSS, Service Worker, Manifest.</p>
+          <p><em>Fitur:</em> Offline caching, add-to-home, responsive layout.</p>
+        </article>
+
+        <article class="project">
+          <h3>MSIB / Mini Projects</h3>
+          <p>Beberapa proyek kecil terkait pengembangan aplikasi web dan data analitik.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="card">
+      <h2>CV & Lampiran</h2>
+      <p>Kamu bisa mengunduh CV lengkap saya di bawah ini:</p>
+      <p><a class="btn" href="Samidin_cv.pdf" download>Unduh CV (PDF)</a></p>
+    </section>
+
+  <section id="resume" class="card">
+  <h3>Sertifikat</h3>
+
+  <div class="sertifikat-container">
+
+    <div class="item">
+      <embed src="sertifikat1.pdf" type="application/pdf">
+    </div>
+
+    <div class="item">
+      <embed src="sertifikat2.pdf" type="application/pdf">
+    </div>
+
+    <div class="item">
+      <embed src="sertifikat3.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat4.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat5.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat6.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat7.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat8.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat9.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat10.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat11.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat12.pdf" type="application/pdf">
+    </div>
+       <div class="item">
+      <embed src="sertifikat13.pdf" type="application/pdf">
+    </div>
+    <div class="item">
+      <embed src="sertifikat14.pdf" type="application/pdf">
+    </div>
+    <div class="item">
+      <embed src="sertifikat15.pdf" type="application/pdf">
+    </div>
+    <div class="item">
+      <embed src="sertifikat16.pdf" type="application/pdf">
+    </div>
+    <div class="item">
+      <embed src="sertifikat17.pdf" type="application/pdf">
+    </div>
+  </div>
+</section>
+
+
+    <section id="contact" class="card">
+      <h2>Kontak</h2>
+      <p>📞 083877990988</p>
+      <p>📧 <a href="mailto:samidinsampoerna@gmail.com">samidinsampoerna@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/samidin-46386b264/" target="_blank" rel="noopener">linkedin.com/in/samidin-46386b264/</a></p>
+
+      <form id="contactForm" class="contact-form" action="mailto:samidinsampoerna@gmail.com" method="GET" enctype="text/plain" onsubmit="alert('Form akan membuka email client Anda.');">
+        <input name="subject" placeholder="Subjek" required />
+        <textarea name="body" placeholder="Pesan singkat..." required></textarea>
+        <button type="submit" class="btn">Kirim (via email)</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {year} Samidin — Dibuat dengan ❤️</p>
+    </div>
+  </footer>
+
+  <script>
+    // Replace year dynamically
+    document.querySelectorAll('footer p')[0].innerText = `© ${new Date().getFullYear()} Samidin — Dibuat dengan ❤️`;
+
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(reg => console.log('SW terdaftar:', reg.scope))
+          .catch(err => console.warn('Gagal daftar SW:', err));
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+:root{
+  --accent:#4f46e5;
+  --bg:#f3f4f6;
+  --card:#ffffff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui, -apple-system; margin:0; background:var(--bg); color:#111827; line-height:1.6}
+.container{max-width:1000px; margin:0 auto; padding:1rem}
+.site-header{background:var(--accent); color:white; padding:2rem 0; margin-bottom:1rem}
+.site-header h1{margin:0; font-size:1.6rem}
+.site-header .subtitle{margin:6px 0 0; opacity:0.95}
+.nav{margin-top:12px}
+.nav a{color:white; text-decoration:none; margin-right:12px; font-weight:600; opacity:0.95}
+.card{background:var(--card); padding:1.25rem; border-radius:10px; box-shadow:0 6px 18px rgba(15,23,42,0.06); margin-bottom:1rem}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:10px}
+.project h3{margin:0 0 6px}
+.btn{display:inline-block; padding:10px 14px; background:var(--accent); color:white; border-radius:8px; text-decoration:none; font-weight:700}
+.info-list{padding-left:1rem; margin-top:8px; color:var(--muted)}
+.site-footer{padding:1.25rem 0; text-align:center; color:var(--muted); margin-top:12px}
+
+/* Contact form */
+.contact-form{display:flex; flex-direction:column; gap:8px; margin-top:8px}
+.contact-form input, .contact-form textarea{padding:10px; border-radius:8px; border:1px solid #e5e7eb; width:100%}
+.contact-form textarea{min-height:100px; resize:vertical}
+@media (min-width:768px){ .site-header{padding:3rem 0} .site-header h1{font-size:2rem} }
+
+.header-flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.profile-img{
+  width:140px;
+  height:140px;
+  object-fit:cover;
+  border-radius:50%;
+  border:1px solid white;
+}
+.sertifikat-container .item{
+  width:300px;
+}
+
+.sertifikat-container .btn{
+  margin-top:10px;
+}
+
+.sertifikat-container{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.sertifikat-container .item{
+  flex:1 1 300px;
+}
+
+.sertifikat-container embed{
+  width:100%;
+  height:400px;
+  border:1px solid #ddd;
+  border-radius:10px;
+}
